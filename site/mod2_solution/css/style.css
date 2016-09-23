@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.row{
+	margin:0px auto;
+	width: 90%;
+
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+p {
+  
+  font-size: 14px;
+  width: 100%;
+ 
+  padding-left: 10px;
+  padding-top: 35px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  font-family: Helvetica;
+  color: black;
+}
+ 
+ #sec_title1{
+ 	background-color:#9fedf8;
+ 	position:absolute;
+ 	top:0;
+ 	right:0;
+ 	width: 150px;
+ 	border-bottom:  1px solid black;
+ 	border-left:1px solid black;
+ }
+  #sec_title2{
+ 	background-color:#9ff8c9;
+ 	position:absolute;
+ 	top:0;
+ 	right:0;
+ 	width: 150px;
+ 	border-bottom:  1px solid black;
+ 	border-left:1px solid black;
+ }
+  #sec_title3{
+ 	background-color:#bd9ff8;
+ 	position:absolute;
+ 	top:0;
+ 	right:0;
+ 	width: 150px;
+ 	border-bottom:  1px solid black;
+ 	border-left:1px solid black;
+ }
+ h2{
+ 	font-size: 18px;
+ 	text-align: center;
+    padding: 3px;
+
+ }
+
+h1{
+	text-align: center;
+	margin:20px;
+}
+@media (min-width: 992px) {
+	.col-lg{
+		float: left;
+        border: 1px solid black;
+        width: 30%;
+        margin-right:5%;
+        margin-left:0px;
+        background-color: #f8e09f;
+        position:relative;
+	}
+	.col-lg:nth-last-of-type(1) {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md {
+        width: 48%;
+        float: left;
+        border: 1px solid black;
+        margin-right:4%;
+        margin-left:0px;
+        background-color: #f8e09f;
+        position:relative;
+  }
+
+    .col-md:nth-child(2){
+    	width: 48%;
+        float: left;
+        border: 1px solid black;
+        margin-right:0px;
+        margin-left:0px;
+        background-color: #f8e09f;
+        position:relative;
+
+    }
+    .col-md:nth-last-of-type(1) {
+        width: 100%;
+        float: left;
+        border: 1px solid black;
+        margin-top:20px;
+        background-color: #f8e09f;
+        position:relative;
+
+  }
+
+}
+  @media (max-width: 767px){
+  	.col-sm {
+        width: 100%;
+        
+        border: 1px solid black;
+        margin-bottom: 20px;
+        background-color: #f8e09f;
+        position:relative;
+    }
+
+}
